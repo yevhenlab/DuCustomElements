@@ -24,6 +24,12 @@ A light and switch built into your design remain working elements when you place
 
 Your original construct stays intact. Each copy consumes the matching honeycomb and ordinary DU element items.
 
+![XS cylinder and pipe joint constructs become Custom Pipe and Custom Pipe Joint inventory items.](docs/images/xs-construct-to-inventory.png)
+
+Place your custom elements together to build larger creations.
+
+![Custom pipes and joints placed together inside an industrial construct.](docs/images/custom-elements-in-construct.png)
+
 ## What you get
 
 | Feature | In game |

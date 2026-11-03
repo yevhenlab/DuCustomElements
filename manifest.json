@@ -108,9 +108,19 @@
       "sha256": "AAD5F88ED8A8767A608FE15E7DC41DA9F1D6C8BAC812D2E3E334940BBB9A2433"
     },
     {
+      "path": "docs/images/xs-construct-to-inventory.png",
+      "bytes": 1259144,
+      "sha256": "F1D631B7CD296C39A3AFDEE710C6648191F2E922792A4F88D9CEF270D4B782C1"
+    },
+    {
+      "path": "docs/images/custom-elements-in-construct.png",
+      "bytes": 1375408,
+      "sha256": "812FC5F885ECF021FB1304B95340837B1CF36B5563012D912180F79268DDDB58"
+    },
+    {
       "path": "README.md",
-      "bytes": 6103,
-      "sha256": "628AA282D3CD128DCED2C795884523D893BEE7862165056CE6687EBF7ACA3646"
+      "bytes": 6432,
+      "sha256": "8F03C422C170DE8D1C74B9E9FC199356EA31BA20C3374641E5C7B8E466F1B386"
     },
     {
       "path": "scripts/Install.ps1",
