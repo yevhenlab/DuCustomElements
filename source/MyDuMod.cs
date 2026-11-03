@@ -47,7 +47,7 @@ public sealed partial class MyDuMod : IMod
 
     public string GetName() => "CustomElements";
 
-    public Task Initialize(IServiceProvider services)
+    public async Task Initialize(IServiceProvider services)
     {
         string folder = Path.GetDirectoryName(typeof(MyDuMod).Assembly.Location);
         settings = JsonConvert.DeserializeObject<Settings>(File.ReadAllText(
@@ -75,7 +75,8 @@ public sealed partial class MyDuMod : IMod
         Runtime.RegisterBounds = shape => { bounds.Register(shape); modules.Remember(shape); };
         Runtime.AssetsReady = CompletePending;
         panelPath = Path.Combine(folder, "custom-elements-panel.js");
-        return Task.CompletedTask;
+        // Upgrade persisted definitions before clients receive their login item bank.
+        foreach (var shape in await compiler.List()) await definitions.Register(shape);
     }
 
     public Task<ModInfo> GetModInfoFor(ulong playerId, bool admin)

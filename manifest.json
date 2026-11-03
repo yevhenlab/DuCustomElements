@@ -49,8 +49,8 @@
     },
     {
       "path": "docs/reference/01-Creation-Rendering.md",
-      "bytes": 7736,
-      "sha256": "F5A8A14248F310B9004803BC8F1283198DEF3385FCD0EE683DA69B7ADBCC2C29"
+      "bytes": 8914,
+      "sha256": "5B83FA9A761078B86038470954BA4681C37DA3B423A440CF946F568DD11C7715"
     },
     {
       "path": "docs/reference/02-Modules-Blueprints.md",
@@ -99,13 +99,13 @@
     },
     {
       "path": "payload/Mods/ModCustomElements.dll",
-      "bytes": 175104,
-      "sha256": "759D0AF59EB32E9496D72E3B58867F1F1A28E8EE6C9E18F3425FEB8F7C299C40"
+      "bytes": 176128,
+      "sha256": "FA4DF1A0702C5B206EA08ED2CBCEBE278B8118B9A59F64A2CEB65AA6E7303948"
     },
     {
       "path": "payload/Mods/ModCustomElementsLoader.dll",
       "bytes": 8192,
-      "sha256": "AAD5F88ED8A8767A608FE15E7DC41DA9F1D6C8BAC812D2E3E334940BBB9A2433"
+      "sha256": "11B8805AE114FF2663F63B6019C2B25DF9615757F1E43DE3C9DC6AF9344E2278"
     },
     {
       "path": "docs/images/xs-construct-to-inventory.png",
@@ -219,8 +219,8 @@
     },
     {
       "path": "source/Definitions.cs",
-      "bytes": 8783,
-      "sha256": "6172EC8E7996173BC2BD4F5BD2CFBE6C16444C15A60CC2AD9CABAD2667E914C1"
+      "bytes": 8935,
+      "sha256": "127CC3E601BC519B7E1C5CF1758CD250E926B179BC59B759AF82B8D9BE556412"
     },
     {
       "path": "source/Designs.cs",
@@ -244,8 +244,8 @@
     },
     {
       "path": "source/geometry.py",
-      "bytes": 7716,
-      "sha256": "39430DB8F3EBCB1425A05249D893580FBE9736EA2DF7E7E4913D90BE9BC32A41"
+      "bytes": 8030,
+      "sha256": "1855EBC47B53C3630A8E79A6F2503C1D71216E3541AAB0CE8CCD46687CDB9603"
     },
     {
       "path": "source/Jobs.cs",
@@ -314,8 +314,8 @@
     },
     {
       "path": "source/MyDuMod.cs",
-      "bytes": 18478,
-      "sha256": "A7E8ED3863A5152709082DCA5C73212042573BFB7F8898D6E843967D445446AA"
+      "bytes": 18624,
+      "sha256": "0C1C073B103007BCB2E3D8F0807510F5918099B930E82D5795921C78FD3E9538"
     },
     {
       "path": "source/native_mesh.py",
@@ -329,8 +329,8 @@
     },
     {
       "path": "source/registry.py",
-      "bytes": 11440,
-      "sha256": "A926B82CA65B79D0058752077A23BA0FD1A9FFF3E2086D1D183A934E57B371DA"
+      "bytes": 13275,
+      "sha256": "9D05ED0813D3CFFFD62D31244C640D4A54A71D4E6A04F9237CE99198AA0E8100"
     },
     {
       "path": "source/Rename.cs",
@@ -374,8 +374,8 @@
     },
     {
       "path": "source/test_shapes.py",
-      "bytes": 10286,
-      "sha256": "048080889DD8539BACBFEC4968C4802D6BF101FC2D03C9A68AE64EB2069937F0"
+      "bytes": 12252,
+      "sha256": "CC3B88788E6273B63BC2D8508FD19E4AAE37E5C67581688F18EADAB840D2A7CE"
     },
     {
       "path": "source/Tests/Checks.csproj",
@@ -384,8 +384,8 @@
     },
     {
       "path": "source/Tests/Program.cs",
-      "bytes": 20937,
-      "sha256": "EAB9A934DDE57B012F600B2769DAE9FABDEB8A0322397A6126B85C8FAF820F90"
+      "bytes": 21063,
+      "sha256": "12441F0C7A256F178CC12ED92C256D6838931B7B07AD17B7B5CF0731E381E6F3"
     },
     {
       "path": "source/thumbnail.py",

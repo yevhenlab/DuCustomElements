@@ -55,7 +55,7 @@ public sealed class Definitions
             var item = (Element)existing.BaseObject;
             if (existing.Parent?.Name == "CustomVoxelItems" && item.Level == stats.tier &&
                 item.Hitpoints == stats.hp && item.UnitMass == stats.mass &&
-                item.UnitVolume == stats.volume && ChildrenCurrent(shape) &&
+                item.UnitVolume == stats.volume && item.VisibilityLOD == 4 && ChildrenCurrent(shape) &&
                 existing.BaseObject.DisplayName == DisplayName(shape)) return;
         }
         await Import(shape);
@@ -122,6 +122,8 @@ public sealed class Definitions
         yaml.AppendLine("  isTradable: true");
         yaml.AppendLine("  level: " + stats.tier);
         yaml.AppendLine("  disableWhenColliding: false");
+        // Keep the wrapper in the farthest native element subscription tier.
+        yaml.AppendLine("  visibilityLOD: 4");
         yaml.AppendLine("  unitMass: " + Number(stats.mass));
         // Honeycomb inventory volume is already defined per cubic metre of world material.
         yaml.AppendLine("  unitVolume: " + Number(stats.volume));

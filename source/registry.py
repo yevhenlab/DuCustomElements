@@ -73,6 +73,7 @@ class Registry:
             entry = next(iter(definition['elements'].values()))
             assets[definition_path] = json.dumps({'elements': {shape['name']: entry}}).encode()
             shape['assets'] = self.package(assets)
+            self.upgrade_materials(shape)
             shape['status'] = 'prepared'
             atomic_json(path, shape)
             return shape
@@ -161,7 +162,40 @@ class Registry:
         if shape.get('iconRevision', 0) < 2:
             self.upgrade_icon(shape)
             atomic_json(path, shape)
+        if shape.get('materialRevision', 0) < 1:
+            self.upgrade_materials(shape)
+            atomic_json(path, shape)
         return shape
+
+    def upgrade_materials(self, shape):
+        """Preserve item identity and geometry while replacing cached material resources."""
+        assets = self.unpack_assets(shape)
+        stem = shape['hash']
+        library = ET.fromstring(assets.pop(stem + '.mat'))
+        names = {}
+        for material in library.findall('material'):
+            old_name = material.attrib['name']
+            names[old_name] = old_name + '_pbr1'
+            material.set('name', names[old_name])
+            for parameter in ('metalness', 'roughness'):
+                node = material.find(f"parameter[@name='{parameter}']")
+                if node is None:
+                    node = ET.SubElement(material, 'parameter', name=parameter)
+                node.text = '1'
+        assets[stem + '.pbr1.mat'] = ET.tostring(library, encoding='utf-8', xml_declaration=True)
+        definition = json.loads(assets[stem + '.nqdef'])
+        entry = definition['elements'][shape['name']]
+        root = ET.fromstring(assets.pop(entry['node'].removeprefix(PREFIX)))
+        for node in root.findall('./materials/library'):
+            if node.text == PREFIX + stem + '.mat':
+                node.text = PREFIX + stem + '.pbr1.mat'
+        for surface in root.findall('.//surface'):
+            if surface.get('material') in names:
+                surface.set('material', names[surface.get('material')])
+        assets[stem + '.pbr1.node'] = ET.tostring(root, encoding='utf-8', xml_declaration=True)
+        entry['node'] = PREFIX + stem + '.pbr1.node'
+        assets[stem + '.nqdef'] = json.dumps(definition).encode()
+        shape.update(assets=self.package(assets), materialRevision=1)
 
     def upgrade_icon(self, shape):
         assets = self.unpack_assets(shape)

@@ -146,6 +146,10 @@ def material_library(stem, groups, definitions):
         definition = definitions[identity]
         material = ET.SubElement(root, 'material', name=name, parent='mesh_base')
         ET.SubElement(material, 'state', name='nq_mrao').text = '1'
+        # mesh_base multiplies the MRAO metal channel by this parameter.
+        # Native DU mesh materials explicitly use 1; the default loses metallic reflections.
+        ET.SubElement(material, 'parameter', name='metalness').text = '1'
+        ET.SubElement(material, 'parameter', name='roughness').text = '1'
         tint = definition.get('albedo', [1, 1, 1])
         ET.SubElement(material, 'parameter', name='albedo_color').text = text([*tint[:3], 1])
         texture = definition.get('texture')

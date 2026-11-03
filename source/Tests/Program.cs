@@ -81,6 +81,8 @@ var combined = GameplayBank.CreateFromYaml(source + yaml);
 var item = (FurnituresAppliances)combined.GetDefinition(shape.itemTypeId).BaseObject;
 if (item.UnitMass != 50 || item.UnitVolume != 20 || item.Hitpoints != 200 || item.AssetAlias != shape.name)
     throw new Exception("Generated definition has incorrect native statistics or asset identity.");
+if (item.VisibilityLOD != 4)
+    throw new Exception("Custom wrappers must remain subscribed through native element LOD 4.");
 Console.WriteLine("Passed: native gameplay-bank validation, furniture inheritance, identity, mass, volume and HP.");
 foreach (double cubicMetres in new[] { 1.0 / 64, 1.0, 0.5 / 64 })
 {

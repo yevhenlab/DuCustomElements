@@ -46,11 +46,26 @@ reads native LOD0 GLB triangles and maps material surfaces. `native_mesh.py` wri
 static meshes. Visual/collision assets, node, materials, nqdef and thumbnail are packaged under
 `resources_generated/custom_elements/` using hash-based names.
 
+Mesh materials use the native voxel albedo tint and original color (`_c`), normal (`_n`),
+and metalness/roughness/occlusion (`_mrao`) textures. Explicit metalness and roughness multipliers
+of 1 allow the texture channels to control the finish. Only the inventory thumbnail approximates
+lighting. Existing designs receive material revision 1 with distinct `.pbr1.mat`/`.pbr1.node`
+paths and material names to avoid cached material definitions; item identity and mesh geometry
+are preserved. Restart the client to load upgraded resources. Mesh UV projection and triangle
+normals still differ from native voxel rendering, so exact pattern projection and smoothness
+are not guaranteed by this correction.
+
 The visible item preserves material boundaries and slopes. A separate full triangle collider provides
 player collision. The server's bounding-box cache is updated using a copy of its dictionary, while
 CollisionRules filters wrapper interference reports so element placement can overlap the visible mesh.
 This deliberately separates player collision from placement interference. Native children continue to
 use native placement rules. This is not a change to the core's building zone.
+
+Custom wrappers explicitly use `visibilityLOD: 4`, the farthest native element subscription tier.
+Without this field, the inherited default is 0 and the server stops supplying the wrapper when the
+viewer leaves the nearest element tier, regardless of mesh surface visibility settings. Mod startup
+upgrades saved custom definitions before client login. This retains full mesh detail at distance;
+it does not generate simplified mesh LODs or bypass construct streaming limits.
 
 Registry requests are limited to 24,000,000 bytes, samples to 300,000 and mesh triangles to 100,000.
 Missing/stale meshes are rejected instead of fabricating a stale item. Assets must remain under the

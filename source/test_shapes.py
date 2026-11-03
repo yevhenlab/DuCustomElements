@@ -121,6 +121,35 @@ class AssetTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             build_assets(canonicalize({(0, 0, 0): sample()}), simple_glb(), {})
 
+    def test_material_upgrade_preserves_textures_geometry_and_item_identity(self):
+        shape = canonicalize({(0, 0, 0): sample()})
+        assets = build_assets(shape, simple_glb(), {'123': {
+            'albedo': [0.72, 0.55, 0.41], 'texture': 'resources_generated/test/steel'}})
+        shape.update(itemTypeId='12345', assets=Registry.package(assets))
+        original = (shape['hash'], shape['name'], shape['itemTypeId'], shape['canonical'])
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / (shape['hash'] + '.json')
+            path.write_text(json.dumps(shape))
+            registry = Registry(folder, {})
+            upgraded = registry.read_shape(path)
+            result = registry.unpack_assets(upgraded)
+            stem = shape['hash']
+            self.assertEqual(original, (upgraded['hash'], upgraded['name'],
+                                      upgraded['itemTypeId'], upgraded['canonical']))
+            self.assertEqual(result[stem + '.mesh'], assets[stem + '.mesh'])
+            material = ET.fromstring(result[stem + '.pbr1.mat']).find('material')
+            self.assertEqual(material.find("parameter[@name='metalness']").text, '1')
+            self.assertEqual(material.find("parameter[@name='roughness']").text, '1')
+            for slot, suffix in [('albedo', 'c'), ('normal', 'n'), ('shading', 'mrao')]:
+                self.assertEqual(material.find(f"texture[@name='{slot}']").text,
+                                 f'resources_generated/test/steel_{suffix}.dds')
+            node = ET.fromstring(result[stem + '.pbr1.node'])
+            self.assertEqual(node.find('./materials/library').text,
+                             'resources_generated/custom_elements/' + stem + '.pbr1.mat')
+            self.assertTrue(all(s.get('material') == material.get('name')
+                                for s in node.findall('.//surface')))
+            self.assertEqual(registry.read_shape(path), upgraded)
+
     def test_packaged_node_uses_native_compression_and_definition_is_last(self):
         packaged = Registry.package({'a.node': b'<nodes/>', 'a.nqdef': b'{}'})
         self.assertEqual([item['kind'] for item in packaged], [2, 1])
