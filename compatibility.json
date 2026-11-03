@@ -1,0 +1,56 @@
+{
+  "clientVersion": "1.4.18-mydu",
+  "serverAssemblies": [
+    {
+      "name": "NQutils.dll",
+      "version": "1.0.0.0",
+      "sha256": "BC98A0DF1873D9C90C10E62DF8CA8789D2EC16F522ABC76A31C0C6893F0C0977"
+    },
+    {
+      "name": "Interfaces.dll",
+      "version": "1.0.0.0",
+      "sha256": "F0519816DA43964C41A852A4B04929B05A6A38710CE1244CA23199A7F944FED5"
+    },
+    {
+      "name": "Backend.dll",
+      "version": "1.0.0.0",
+      "sha256": "E28FBC6EC09E454C8C32610FD64A47E9D975E3A56CA77DA6B214FE225157B599"
+    },
+    {
+      "name": "Backend.PubSub.dll",
+      "version": "1.0.0.0",
+      "sha256": "B6C597C7E330948CE156803E8DE126C3784CE8ED0A886A4426B69993BBEE902A"
+    },
+    {
+      "name": "Orleans.Core.dll",
+      "version": "2.0.0.0",
+      "sha256": "73560D026761F9AAEB77885CFB5DFE3DC2E1D50B7E62C0FDF49CFA53F27D08F6"
+    },
+    {
+      "name": "Orleans.Core.Abstractions.dll",
+      "version": "2.0.0.0",
+      "sha256": "872F9EEEA3C536C125487125F4EC02DE61E64612C0EA56A232BF966316A6426C"
+    },
+    {
+      "name": "Orleans.Runtime.Abstractions.dll",
+      "version": "2.0.0.0",
+      "sha256": "E444CA95D3491728BC2ACBE09B93DCD852B8CF9281777B9A7435417EC7DD091C"
+    },
+    {
+      "name": "YamlDotNet.dll",
+      "version": "12.0.2.0",
+      "sha256": "E2C6F0F17395CCB856254C24C8AA371811CCF6E6D5005D10D856E1627DD3E496"
+    },
+    {
+      "name": "Newtonsoft.Json.dll",
+      "version": "13.0.1.25517",
+      "sha256": "72CF291D4BAB0EDD08A9B07C6173E1E7AD1ABB7AB727FD7044BF6305D7515661"
+    },
+    {
+      "name": "Grains.dll",
+      "sha256": "AE8300DA084BE2DB37C71FE040CDA3F778776BD4ED0736EE5CF0F5E67499C78C",
+      "version": "1.0.0.0"
+    }
+  ],
+  "packageVersion": "2026.10.17"
+}

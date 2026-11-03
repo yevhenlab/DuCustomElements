@@ -1,0 +1,13 @@
+*
+!requirements.txt
+!Dockerfile
+!cell_codec.py
+!shape.py
+!modules.py
+!element-icons.json
+!geometry.py
+!native_mesh.py
+!thumbnail.py
+!registry.py
+!service.py
+!materialdefs.nqdef

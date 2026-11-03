@@ -1,0 +1,387 @@
+{
+  "created": "2026-10-17",
+  "packageVersion": "2026.10.17",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 124,
+      "sha256": "432DE616A6DB9FF3C5B0AF29DAA2B0D6C556C674BA89283464120CF894517FB0"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 126,
+      "sha256": "CBB9C32294BD960D039DFEEF441CE0A04204CF9C1CABBAE8A51643767ADD2D3A"
+    },
+    {
+      "path": "compatibility.json",
+      "bytes": 1755,
+      "sha256": "FA0389F475228FCAB7458B699E8AA89FB958CE0FFA0D4C78526752471E188690"
+    },
+    {
+      "path": "compose.yaml",
+      "bytes": 602,
+      "sha256": "00D16E8950D963019DBB05AE40C6DE8A02633871D35D70F208DFD4F93A9E2C4B"
+    },
+    {
+      "path": "docs/00-Installation.md",
+      "bytes": 5995,
+      "sha256": "6771A86FDE6917908C4F2B1F144AE8F2B95BF51C3678F3514A85C5D413D19B87"
+    },
+    {
+      "path": "docs/01-Operations.md",
+      "bytes": 7674,
+      "sha256": "4ABCE79BC7FCAE2275E52D63B719C1C0BECC6C2EF1E11A5B18E2C4B23F596F62"
+    },
+    {
+      "path": "docs/02-Development.md",
+      "bytes": 4702,
+      "sha256": "68FFE775ACAC22F37583A7C0941546F2426670DE1759B6B4A93E7C6140828BC8"
+    },
+    {
+      "path": "docs/03-Limits.md",
+      "bytes": 3949,
+      "sha256": "A490935F54D79844FBB42C15CF2B7DE0A50AE384C593CAE05CEDF38E0EA1DDE9"
+    },
+    {
+      "path": "docs/04-Validation.md",
+      "bytes": 1517,
+      "sha256": "5AEDFBDF4E896C7149D85ED778D3B7CB492C5EA0D2AE8749F4F71F92D157299A"
+    },
+    {
+      "path": "docs/reference/01-Creation-Rendering.md",
+      "bytes": 7736,
+      "sha256": "F5A8A14248F310B9004803BC8F1283198DEF3385FCD0EE683DA69B7ADBCC2C29"
+    },
+    {
+      "path": "docs/reference/02-Modules-Blueprints.md",
+      "bytes": 5244,
+      "sha256": "D26A03DD47CFA8DAC85CB5B1EC58E5327818ACFD580EF83A074FF59EB003A150"
+    },
+    {
+      "path": "docs/reference/03-Persistence-Diagnostics.md",
+      "bytes": 6208,
+      "sha256": "387EBC6FD30711E4F05AD01328479E3F836941F6A23D9A2BB1C7D00D8A7CFC19"
+    },
+    {
+      "path": "docs/reference/04-Source-Map.md",
+      "bytes": 5405,
+      "sha256": "5F662C765A1EAEA572288E8E9771FD0EC8840904691DA18B24E86355EC8462AA"
+    },
+    {
+      "path": "payload/Mods/custom-elements-name-panel.js",
+      "bytes": 2287,
+      "sha256": "5E12961B2F12BB222EA5ADFE304A0787880CD3704645D945A4312E32E3FE39E2"
+    },
+    {
+      "path": "payload/Mods/custom-elements-panel.js",
+      "bytes": 7177,
+      "sha256": "BE9210A6A595DC20C7287B4367FB08934C48E11F0A8ADCA5FA75D40F79359368"
+    },
+    {
+      "path": "payload/Mods/custom-elements-preview.js",
+      "bytes": 9317,
+      "sha256": "D20714DB8FF98E9A133E4DDD2CAA57EDD95B142427ABE273DFBB64B972C1651C"
+    },
+    {
+      "path": "payload/Mods/custom-elements-ui-probe.js",
+      "bytes": 944,
+      "sha256": "30A0205FA8D7438601ABF3266B4DC0CA519976AEE676E654AE2689B6A5593948"
+    },
+    {
+      "path": "payload/Mods/custom-elements.json",
+      "bytes": 99,
+      "sha256": "616B7E455667359C5AC885B024548F9F54255B948F0CA300E666B076FC3AA09E"
+    },
+    {
+      "path": "payload/Mods/element-resources.json",
+      "bytes": 372736,
+      "sha256": "3CFB43AAA00D45AF576EB85842AF830DCCDB9A44020A265C7FD938681DB93C15"
+    },
+    {
+      "path": "payload/Mods/ModCustomElements.dll",
+      "bytes": 175104,
+      "sha256": "759D0AF59EB32E9496D72E3B58867F1F1A28E8EE6C9E18F3425FEB8F7C299C40"
+    },
+    {
+      "path": "payload/Mods/ModCustomElementsLoader.dll",
+      "bytes": 8192,
+      "sha256": "AAD5F88ED8A8767A608FE15E7DC41DA9F1D6C8BAC812D2E3E334940BBB9A2433"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6103,
+      "sha256": "628AA282D3CD128DCED2C795884523D893BEE7862165056CE6687EBF7ACA3646"
+    },
+    {
+      "path": "scripts/Install.ps1",
+      "bytes": 3667,
+      "sha256": "BC17D7EB70B788AE9E097084E32859F0181B40491467CCF17605ECE9F5245AF5"
+    },
+    {
+      "path": "scripts/Test-Source.ps1",
+      "bytes": 660,
+      "sha256": "5B464323E9A09467FB0223494FE3738AF9BA03250EFC775B663A847205AA21A8"
+    },
+    {
+      "path": "scripts/Verify-Package.ps1",
+      "bytes": 577,
+      "sha256": "A38C3A8EE37E85E97B5CB82076EFE536DB9B67F692B3EFA1FF3D8F1F770D5725"
+    },
+    {
+      "path": "source/.dockerignore",
+      "bytes": 177,
+      "sha256": "F131341C9B174B08B0039E7740671E502A6C044CDAA4F739008A9C79B012CCB1"
+    },
+    {
+      "path": "source/Assets.cs",
+      "bytes": 3043,
+      "sha256": "1428F7AC1F421F9A68691FAD5ED946133E51A06C1ACED3F04777B18362129CA5"
+    },
+    {
+      "path": "source/BankNotifications.cs",
+      "bytes": 1573,
+      "sha256": "8EFFFBE17391793AEFA68E1B37E3B0489892324C0955D56012ECC35A670DB240"
+    },
+    {
+      "path": "source/BlueprintModules.cs",
+      "bytes": 1817,
+      "sha256": "6AD88E0D19AF2E100DC578825A36256514896414CCAAE01E74BD8809493D2752"
+    },
+    {
+      "path": "source/Bounds.cs",
+      "bytes": 2312,
+      "sha256": "A4B8DF1CA4EEA21CBCF3574C66845EED8ACA605D374977F41DEE88C530B19937"
+    },
+    {
+      "path": "source/build.ps1",
+      "bytes": 1988,
+      "sha256": "BA2D8489F633883901EF201F3428FACEB03330374A80F76A1B8069072D54046E"
+    },
+    {
+      "path": "source/cell_codec.py",
+      "bytes": 3724,
+      "sha256": "F15F32238A9A5E072233ED79C66649ED643958184858B99703E87ECDBF648140"
+    },
+    {
+      "path": "source/ChildResources.cs",
+      "bytes": 1646,
+      "sha256": "DBCD6764DEF603EA27C206FB40BFF3B8A3C94A3F7B6CC19106A54EB564C87834"
+    },
+    {
+      "path": "source/CollisionRules.cs",
+      "bytes": 1630,
+      "sha256": "450C1D530A00CE0526919DE109ADAE58685DFE34A276B9385B6E6F3FAEA82657"
+    },
+    {
+      "path": "source/Compiler.cs",
+      "bytes": 1802,
+      "sha256": "2AE5BA21D90F2817A86815EA446DF38F32635199A11B52E4F53FA8E124965EB8"
+    },
+    {
+      "path": "source/Costs.cs",
+      "bytes": 1585,
+      "sha256": "259FACFDE818B7A3FFBFD7BF46B0D1CB935DF270BDDF9375860C40DB381B4F8F"
+    },
+    {
+      "path": "source/custom-elements-name-panel.js",
+      "bytes": 2287,
+      "sha256": "5E12961B2F12BB222EA5ADFE304A0787880CD3704645D945A4312E32E3FE39E2"
+    },
+    {
+      "path": "source/custom-elements-panel.js",
+      "bytes": 7177,
+      "sha256": "BE9210A6A595DC20C7287B4367FB08934C48E11F0A8ADCA5FA75D40F79359368"
+    },
+    {
+      "path": "source/custom-elements-preview.js",
+      "bytes": 9317,
+      "sha256": "D20714DB8FF98E9A133E4DDD2CAA57EDD95B142427ABE273DFBB64B972C1651C"
+    },
+    {
+      "path": "source/custom-elements-ui-probe.js",
+      "bytes": 944,
+      "sha256": "30A0205FA8D7438601ABF3266B4DC0CA519976AEE676E654AE2689B6A5593948"
+    },
+    {
+      "path": "source/custom-elements.example.json",
+      "bytes": 95,
+      "sha256": "3B5090FE7B833E42ACE6BCF8E0DF16D5E8FAE38159BABCFB457106D28A0A9D55"
+    },
+    {
+      "path": "source/Definitions.cs",
+      "bytes": 8783,
+      "sha256": "6172EC8E7996173BC2BD4F5BD2CFBE6C16444C15A60CC2AD9CABAD2667E914C1"
+    },
+    {
+      "path": "source/Designs.cs",
+      "bytes": 3409,
+      "sha256": "CAF9B7E3863891CEFF8BC4C82CDCA9FE076BF785C73A07BD8F35290AF036F5F4"
+    },
+    {
+      "path": "source/Dockerfile",
+      "bytes": 411,
+      "sha256": "9A6828BE1539A73FFA50A03F5304C13D9D94A9372AA92D20518297AB321453BA"
+    },
+    {
+      "path": "source/element-icons.json",
+      "bytes": 100734,
+      "sha256": "E3AF3D16280E0FDA898E602622B3C2D04214751EDF80D8C35741DE390CA8AA86"
+    },
+    {
+      "path": "source/element-resources.json",
+      "bytes": 372736,
+      "sha256": "3CFB43AAA00D45AF576EB85842AF830DCCDB9A44020A265C7FD938681DB93C15"
+    },
+    {
+      "path": "source/geometry.py",
+      "bytes": 7716,
+      "sha256": "39430DB8F3EBCB1425A05249D893580FBE9736EA2DF7E7E4913D90BE9BC32A41"
+    },
+    {
+      "path": "source/Jobs.cs",
+      "bytes": 1434,
+      "sha256": "1D23C342B7B463BD6952EF966A14C0ED58AAEAA3602B0847F7EC8E68FBAFE655"
+    },
+    {
+      "path": "source/LiveBlueprintCheck.cs",
+      "bytes": 8109,
+      "sha256": "A264BBCD40442934F30F7EABF2C99ADC76686D03A8E8F9995FFBF0D2404080A9"
+    },
+    {
+      "path": "source/LiveModuleCheck.cs",
+      "bytes": 9490,
+      "sha256": "7967F308D6F7C635BE3E58DA21ED300A6934BD8567AAADCAA7C958B89DFEE324"
+    },
+    {
+      "path": "source/Loader/MyDuMod.cs",
+      "bytes": 2164,
+      "sha256": "8E0151F54B40264C34E43F44EA8C879A57A61680A1AB770E92C4DA9445C7ADF9"
+    },
+    {
+      "path": "source/materialdefs.nqdef",
+      "bytes": 449806,
+      "sha256": "8C2ACAF3C948578B3FEC0EFB123BAC3BDCDF6A290BADDF9D8B5577FB93F39E62"
+    },
+    {
+      "path": "source/Models.cs",
+      "bytes": 2413,
+      "sha256": "89AC07FC6313DF552B7FB7DC520E6367B0891EF55EAB168BB224BE6C536522CC"
+    },
+    {
+      "path": "source/ModuleBlueprints.cs",
+      "bytes": 6753,
+      "sha256": "E7C267EC3B66BCFA16106300DE71118A8776AA7354846DB177866B0E7F1B8267"
+    },
+    {
+      "path": "source/ModuleGroups.cs",
+      "bytes": 2159,
+      "sha256": "2D91872F7E8B9904A373518519DA8508447B34B91B7687E8DD1E012A53A0CB95"
+    },
+    {
+      "path": "source/ModuleHooks.cs",
+      "bytes": 10330,
+      "sha256": "FBD8FC8769B56C2370392C6D8A630FF6A41EADB401BB3F62D9071402978097B9"
+    },
+    {
+      "path": "source/ModuleInventory.cs",
+      "bytes": 2013,
+      "sha256": "1A11B4EB9D8DA076AA4E9403F34BBD5C80C5066805A2DED4DE6D52823A3F872B"
+    },
+    {
+      "path": "source/ModulePickup.cs",
+      "bytes": 7572,
+      "sha256": "F2122DB48AA0A07F2E625C519556010832A811E7660F41D6397512B63FC2D2C8"
+    },
+    {
+      "path": "source/modules.py",
+      "bytes": 2890,
+      "sha256": "A0F5581E9577534F2101DBC9BFA356E9D34F6FE92D346701360A18E4B566C24C"
+    },
+    {
+      "path": "source/ModuleTransforms.cs",
+      "bytes": 2123,
+      "sha256": "E70E42C1C4C554EDF6A63B6AC272EF50C79327C4F17A9323FF7C5DBA4448A81F"
+    },
+    {
+      "path": "source/MyDuMod.cs",
+      "bytes": 18478,
+      "sha256": "A7E8ED3863A5152709082DCA5C73212042573BFB7F8898D6E843967D445446AA"
+    },
+    {
+      "path": "source/native_mesh.py",
+      "bytes": 3200,
+      "sha256": "3134E3E5D2EC6E25E95E813D9142DC03B1F846318C8D53AACCD79E8B90BD16C8"
+    },
+    {
+      "path": "source/PreviewDelivery.cs",
+      "bytes": 1961,
+      "sha256": "6B4D1B536744439CF0BE57A344BFFA318B38A68AFD015D16247371FA7062693D"
+    },
+    {
+      "path": "source/registry.py",
+      "bytes": 11440,
+      "sha256": "A926B82CA65B79D0058752077A23BA0FD1A9FFF3E2086D1D183A934E57B371DA"
+    },
+    {
+      "path": "source/Rename.cs",
+      "bytes": 4375,
+      "sha256": "6FE59DA6D96EC69190BC3964BC58FEBDDC9718F0AE3F9DECC7B1413463252359"
+    },
+    {
+      "path": "source/requirements.txt",
+      "bytes": 38,
+      "sha256": "A62D0ECD59221F30A6695BFE520BA5672FB70CADBD72403E18247722DE0CDFD9"
+    },
+    {
+      "path": "source/service.py",
+      "bytes": 2253,
+      "sha256": "49A0384BAE841110CCC01CF8F0CC58CC1F2ECA7A96176875880AE92FE5C5AA36"
+    },
+    {
+      "path": "source/shape.py",
+      "bytes": 5196,
+      "sha256": "6554AC5B8A6EA10CA1531EDBD65A0F02229CCE489B3DAB22A426763144BF86B2"
+    },
+    {
+      "path": "source/SourceElements.cs",
+      "bytes": 3197,
+      "sha256": "4F4F006774800C1D62A0B9495834B89B25FCE9A337383E77C079A92CC793C2D0"
+    },
+    {
+      "path": "source/test_native_mesh.py",
+      "bytes": 3319,
+      "sha256": "CBD4ADEE90A6B49374D91CF4BDA40DE4D035E5FB64E2B1DE3CA880A3C20939EB"
+    },
+    {
+      "path": "source/test_panel.cjs",
+      "bytes": 6363,
+      "sha256": "0858D01D42CF92453A036BC50A31CEF312A82F7D29C73E17A13B0A0EECD6669B"
+    },
+    {
+      "path": "source/test_preview.cjs",
+      "bytes": 9192,
+      "sha256": "2B1DFB8511F1F169F5EB7BEDD980E023335ED4F5CEEF3B5176C31AC379F2F37A"
+    },
+    {
+      "path": "source/test_shapes.py",
+      "bytes": 10286,
+      "sha256": "048080889DD8539BACBFEC4968C4802D6BF101FC2D03C9A68AE64EB2069937F0"
+    },
+    {
+      "path": "source/Tests/Checks.csproj",
+      "bytes": 2011,
+      "sha256": "37416D20E2EA5EAF76A34EEF058F0F49D6503BC71625941B3F7852DE1378572B"
+    },
+    {
+      "path": "source/Tests/Program.cs",
+      "bytes": 20937,
+      "sha256": "EAB9A934DDE57B012F600B2769DAE9FABDEB8A0322397A6126B85C8FAF820F90"
+    },
+    {
+      "path": "source/thumbnail.py",
+      "bytes": 2781,
+      "sha256": "D1CC944378E60BA7E7C9D56B16FB7882C45A2091C8E52FAA5F2774544FC82494"
+    }
+  ],
+  "packagingDate": "2026-11-03"
+}

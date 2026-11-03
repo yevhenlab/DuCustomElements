@@ -1,0 +1,5 @@
+{
+  "compilerUrl": "http://custom-elements:8097",
+  "maximumBatch": 1000,
+  "enabled": false
+}

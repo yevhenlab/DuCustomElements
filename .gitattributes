@@ -1,0 +1,3 @@
+# Preserve exact file bytes so manifest checksums survive clone and checkout.
+* -text
+".Dev Custom Elements" export-ignore

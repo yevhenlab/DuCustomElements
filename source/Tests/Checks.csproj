@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DuDlls Condition="'$(DuDlls)' == ''">$(MYDU_SERVER_ASSEMBLIES)</DuDlls>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <Reference Include="Backend"><HintPath>$(DuDlls)\Backend.dll</HintPath></Reference>
+    <Reference Include="Backend.PubSub"><HintPath>$(DuDlls)\Backend.PubSub.dll</HintPath></Reference>
+    <Reference Include="NQutils"><HintPath>$(DuDlls)\NQutils.dll</HintPath></Reference>
+    <Reference Include="Interfaces"><HintPath>$(DuDlls)\Interfaces.dll</HintPath></Reference>
+    <Reference Include="Newtonsoft.Json"><HintPath>$(DuDlls)\Newtonsoft.Json.dll</HintPath></Reference>
+    <Reference Include="YamlDotNet"><HintPath>$(DuDlls)\YamlDotNet.dll</HintPath></Reference>
+    <Compile Include="..\Definitions.cs" Link="Definitions.cs" />
+    <Compile Include="..\Designs.cs" Link="Designs.cs" />
+    <Compile Include="..\ChildResources.cs" Link="ChildResources.cs" />
+    <Compile Include="..\Assets.cs" Link="Assets.cs" />
+    <Compile Include="..\BankNotifications.cs" Link="BankNotifications.cs" />
+    <Compile Include="..\Models.cs" Link="Models.cs" />
+    <Compile Include="..\Jobs.cs" Link="Jobs.cs" />
+    <Compile Include="..\PreviewDelivery.cs" Link="PreviewDelivery.cs" />
+    <Compile Include="..\BlueprintModules.cs" Link="BlueprintModules.cs" />
+    <Compile Include="..\Costs.cs" Link="Costs.cs" />
+    <Compile Include="..\Bounds.cs" Link="Bounds.cs" />
+    <Compile Include="..\ModuleTransforms.cs" Link="ModuleTransforms.cs" />
+    <Compile Include="..\ModuleGroups.cs" Link="ModuleGroups.cs" />
+    <Compile Include="..\ModuleInventory.cs" Link="ModuleInventory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\element-resources.json" Link="element-resources.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
+

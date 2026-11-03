@@ -1,0 +1,8 @@
+.Dev Custom Elements/
+source/bin/
+source/Tests/bin/
+source/Tests/obj/
+source/compile-*.rsp
+**/__pycache__/
+*.pyc
+.env

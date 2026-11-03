@@ -1,0 +1,23 @@
+name: du-custom-elements
+services:
+  custom-elements:
+    image: mydu-custom-elements:2026.10.17
+    build:
+      context: ./source
+    restart: unless-stopped
+    volumes:
+      - shapes:/data
+    networks:
+      game:
+        aliases: [custom-elements]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://localhost:8097/health', timeout=5)"]
+      interval: 10s
+      timeout: 6s
+      retries: 6
+networks:
+  game:
+    external: true
+    name: ${CUSTOM_ELEMENTS_NETWORK:?Set CUSTOM_ELEMENTS_NETWORK to the Orleans Docker network}
+volumes:
+  shapes:
